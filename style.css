@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: General Sans;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* background-color: #000; */
+}
+
+#miniCircle {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  /* filter: invert(1); */
+  position: absolute;
+  z-index: 9999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  pointer-events: none;
+}
+
+.main {
+  height: auto;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  color: #fff;
+}
+
+#nav {
+  color: #fff;
+  width: 100%;
+  padding: 30px 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  position: fixed;
+  background-color: #000;
+  /* top: 0; */
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+#heading {
+  padding-top: 200px;
+  margin-left: 3vw;
+}
+.bounding {
+  /* background-color: red; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.bounding .boundingElem {
+  transform: translateY(100%);
+}
+
+#heading h1 {
+  font-family: General Sans Medium;
+  font-size: 10vw;
+  font-weight: 400;
+  line-height: 0.85;
+  opacity: 0.6;
+}
+#heading h5 {
+  font-size: 14px;
+}
+
+#blockText {
+  /* background-color: red; */
+  width: fit-content;
+  margin-left: 10.5vw;
+  text-align: right;
+  line-height: 2;
+}
+
+#smallStamp {
+  margin-top: 170px;
+  padding-right: 3vw;
+}
+#smallStamp h5 {
+  font-size: 1vmax;
+  text-align: right;
+  line-height: 2;
+}
+#heroFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  padding: 20px 3vw;
+  width: 100%;
+  bottom: 0;
+}
+
+#heroFooter a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#iconSet {
+  display: flex;
+  gap: 5px;
+}
+#iconSet .circle {
+  width: 25px;
+  height: 25px;
+  background-color: #888;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#iconSet i {
+  color: #000000;
+}
+
+/* SECOND PAGE CSS STARTS HERE */
+#second {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  padding-top: 20vh;
+  position: relative;
+}
+
+#second .elems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  /* padding: 4vw 0vw; */
+  padding-top: 3vw;
+  padding-bottom: 4vw;
+  margin-left: 3vw;
+  border-top: 0.3px solid #888;
+  border-bottom: 0.3px solid #888;
+  position: relative;
+}
+
+.elems h1 {
+  font-family: General Sans Medium;
+  color: #999;
+  font-size: 7.2vw;
+  font-weight: 400;
+}
+.elems h5 {
+  color: #fff;
+}
+.elems img {
+  position: absolute;
+  z-index: 999;
+  height: 140%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  /* display: none; */
+}
+#about {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20vh 15vw;
+}
+#textabout {
+  max-width: 400px;
+}
+#textabout h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+#textabout p {
+  font-size: 17px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+#textabout a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 6px 20px;
+  font-size: 14px;
+}
+
+#about img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+#subscribe {
+  background-color: #000;
+  color: #fff;
+  padding-left: 3vw;
+  padding-bottom: 15vh;
+}
+#subscribe h5 {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+#subscribe h3 {
+  font-size: 15px;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 3vw;
+  background-color: #000;
+  color: #fff;
+}
+
+#footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 18px;
+}
+#footerRight {
+  display: flex;
+  gap: 40px;
+}
+#footerRight a {
+  font-family: General Sans Medium;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  /* font-weight: 900; */
+}
